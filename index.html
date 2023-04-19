@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="estilo/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Decodificador de texto</title>
+        
+    </head>
+
+    <body>
+        <main class="conteudo">
+
+            <section class="conteudo-esquerda">
+                    <main class="texto-resize">
+                        <textarea id="textoParaEnDec" onfocus="this.value='';" class="texto-input" placeholder="Digite seu texto"></textarea>
+                    </main>
+                    <footer class="btna">
+                        <div class="aviso">
+                            <p>Apenas letras minúsculas e sem acento.</p>
+                        </div>
+                        <div class="botoes">
+                            <button id="encode" class="buttonEncode">Criptografar</button>
+                            <button id="decode" class="buttonDecode">Descriptografar</button>
+                        </div>
+                    </footer>
+            </section>
+
+            <section class="conteudo-direita">
+                <div class="caixa">
+                    <div class="resize-resposta" id="teste-resposta">
+                        <span id="resposta" class="resposta" role="textbox" placeholder="Nenhuma mensagem encontrada" contenteditable></span>
+                    </div>
+                    <p id="explicacao" style="display: block">Digite o texto que você deseja criptografar ou descriptografar.</p>
+                    <div class="botao-direita">
+                        <button id="copiar" style="display: none;" class="buttonCopiar">Copiar texto</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="interacao/script.js"></script>
+    </body>
+</html>
